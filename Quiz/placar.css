@@ -1,0 +1,32 @@
+#highScoreList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.050);
+    transform: translateY(-20);
+}
+
+#placar {
+    animation: fromBottom 0.2s 0.8s backwards;
+}
+/*Animação*/
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

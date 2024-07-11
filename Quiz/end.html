@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Quiz - FIM!</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Seu Nome"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Salvar
+          </button>
+          <a href="/game.html" class="btn">Jogar Novamente</a>
+          <a href="/index.html" class="btn">Página Inicial</a>
+        </form>
+      </div>
+    </div>
+    <script src="/end.js"></script>
+  </body>
+</html>
